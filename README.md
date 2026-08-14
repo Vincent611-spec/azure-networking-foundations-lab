@@ -97,13 +97,19 @@ was configured with three dedicated subnets.
 
 Conceptually, the intended application traffic path is:
 
-Internet  
-↓  
-Web Tier (`snet-web`)  
-↓ TCP 8080  
-Application Tier (`snet-app`)  
-↓ TCP 1433  
-Data Tier (`snet-data`)
+Internet
+   │
+   │ HTTP/HTTPS (80/443)
+   ▼
+Web Tier (snet-web)
+   │
+   │ TCP 8080
+   ▼
+Application Tier (snet-app)
+   │
+   │ TCP 1433
+   ▼
+Data Tier (snet-data)
 
 This design demonstrates the principle of network segmentation by separating different application functions into dedicated network boundaries.
 

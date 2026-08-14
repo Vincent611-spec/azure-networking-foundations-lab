@@ -97,6 +97,7 @@ was configured with three dedicated subnets.
 
 Conceptually, the intended application traffic path is:
 
+```text
 Internet
    │
    │ HTTP/HTTPS (80/443)
@@ -110,6 +111,7 @@ Application Tier (snet-app)
    │ TCP 1433
    ▼
 Data Tier (snet-data)
+```
 
 This design demonstrates the principle of network segmentation by separating different application functions into dedicated network boundaries.
 
@@ -119,19 +121,21 @@ This design demonstrates the principle of network segmentation by separating dif
 
 # Project Structure
 
-    azure-networking-foundations-lab/
+```text
+azure-networking-foundations-lab/
+│
+├── README.md
+├── key-learnings.md
+│
+└── Screenshots/
     │
-    ├── README.md
-    ├── key-learnings.md
-    │
-    └── Screenshots/
-        │
-        ├── 01-resource-group/
-        ├── 02-virtual-network/
-        ├── 03-subnets/
-        ├── 04-network-security-group/
-        ├── 05-nsg-rules/
-        └── 06-network-review/
+    ├── 01-resource-group/
+    ├── 02-virtual-network/
+    ├── 03-subnets/
+    ├── 04-network-security-group/
+    ├── 05-nsg-rules/
+    └── 06-network-review/
+```
 
 ---
 
@@ -403,11 +407,11 @@ I gained hands-on experience with:
 
 Most importantly, the project helped me understand that creating a VNet is only one part of cloud networking.
 
-A well-designed network also requires thinking about **segmentation, traffic flow, security boundaries, and which systems should be allowed to communicate with each other.**
+A well-designed network also requires thinking about segmentation, traffic flow, security boundaries, and which systems should be allowed to communicate with each other.
 
 For a more detailed reflection on the concepts learned during this project:
 
-➡️ **[View Key Learnings](key-learnings.md)**
+➡️ [View Key Learnings](key-learnings.md)
 
 ---
 
